@@ -30,9 +30,19 @@ img {
     "footer footer footer"
   ;
 }
+/* Header */
 
 .header {
   grid-area: header;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px;
 }
 
 .sidenav {
