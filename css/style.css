@@ -16,7 +16,9 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 /* General grid */
@@ -92,20 +94,31 @@ header nav ul {
 background: #b07dfb;
 }
 
-
-
-
-
-
-
+/* Content */
 .content {
   grid-area: content;
 }
 
+/* Advertising */
 .adverts {
   grid-area: adverts;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  gap: 30px ;
+
 }
 
+
+/* Footer */
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
