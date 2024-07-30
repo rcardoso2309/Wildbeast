@@ -97,6 +97,26 @@ background: #b07dfb;
 /* Content */
 .content {
   grid-area: content;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+
+}
+
+.col-wide {
+  grid-column: 1 / -1;
+}
+
+.imagem-1 {
+  grid-row: span 2;
+  align-self: end;
+}
+
+.item-2 {
+  align-self: end;
 }
 
 /* Advertising */
@@ -106,10 +126,8 @@ background: #b07dfb;
   display: grid;
   align-content: start;
   padding: 30px;
-  gap: 30px ;
-
+  gap: 30px;
 }
-
 
 /* Footer */
 .footer {
