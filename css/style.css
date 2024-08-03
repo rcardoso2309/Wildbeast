@@ -4,7 +4,7 @@ margin: 0px;
 }
 
 body {
-  font-family: "Volkorn", Georgia, serif;
+  font-family: 'Vollkorn', Georgia, serif;
 } 
 
 li {
@@ -32,6 +32,34 @@ img {
     "footer footer footer"
   ;
 }
+
+@media (max-width: 1200px) {
+  
+  .structure {
+    grid-template-areas: 
+      "header header header"
+      "sidenav content content"
+      "sidenav adverts adverts"
+      "footer footer footer"
+    ;
+  }
+}
+
+@media (max-width: 760px) {
+  .structure {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      "header"
+      "sidenav"
+      "adverts"
+      "footer"
+      ;
+  }
+}
+
+
+
+
 /* Header */
 
 .header {
@@ -102,7 +130,7 @@ background: #b07dfb;
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 30px;
+  gap: 30px;
 }
 
 .col-wide {
@@ -123,8 +151,8 @@ background: #b07dfb;
 p {
   font-size: 1.2em;
   line-height: 1.6;
-  letter-spacing: -0.0005em;
-  color: rgba(0,0,0,.7);
+  letter-spacing: -0.005em;
+  color: rgba(0, 0, 0, .7);
 }
 
 .info p + p {
@@ -189,7 +217,7 @@ margin: 10px auto;
 .emphasis {
   font-size: 0.875em;
   color: #b07dfb;
-  max-width: 16em;
+  max-width: 18em;
 }
 
 .quote, .attributes {
